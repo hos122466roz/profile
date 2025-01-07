@@ -4,21 +4,20 @@ import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
 const Header = () => {
   const [dark, setDark] = useState("dark");
-  useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-      setDark("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      setDark("light");
-    }
-  }, []);
-  const theme = localStorage.theme;
-  console.log(theme);
+  // useEffect(() => {
+  //   if (
+  //     localStorage.theme === "dark" ||
+  //     (!("theme" in localStorage) &&
+  //       window.matchMedia("(prefers-color-scheme: dark)").matches)
+  //   ) {
+  //     document.documentElement.classList.add("dark");
+  //     setDark("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //     setDark("light");
+  //   }
+  // }, []);
+  // const theme = localStorage.theme;
   const darkModeHandler = () => {
     if (localStorage.theme === "dark") {
       setDark("light");
