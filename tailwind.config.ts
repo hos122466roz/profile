@@ -6,13 +6,29 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "2rem",
+          sm: "4rem",
+          lg: "4rem",
+          xl: "0rem",
+          "2xl": "6rem",
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }: any) {
+      addVariant("child", "&>*");
+      addVariant("child-hover", "&>*:hover");
+    },
+  ],
 } satisfies Config;
