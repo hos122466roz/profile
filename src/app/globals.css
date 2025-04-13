@@ -2,43 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes sppear {
-  from {
-    opacity: 0;
-    scale: .5;
-
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-
-  }
-}
-@keyframes sppear2 {
-  from {
-    opacity: 0; 
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-.sppear {
-  animation: sppear  linear;
-  animation-timeline: view(); 
- animation-range: entry 10;
-}
-.sppear2 {
-  animation: sppear2 1.5s linear;
-  
-}
-.sppear3 {
-  animation: sppear2 2s linear;
-  
-  
-}
-
 input,textarea{
   width: 100%;
   margin: 20px 0 ;

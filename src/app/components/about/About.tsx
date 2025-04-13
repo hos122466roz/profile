@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../../../../public/img/DSC_1747 (2).png";
+import img from "../../../../public/img/DSC_16883.jpg";
 const About = () => {
   return (
     <section className="sppear container   text-center ">
@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className="w-full xl:w-[50%] xl:pr-24 text-right  dark:text-white text-zinc-800 ">
           <h2 className="mt-12 xl:mt-0 mb-12 text-xl font-bold">حسین روزدار هستم</h2>
-          <p className="text-lg text-justify">
+          <p className="text-lg text-right">
             کارشناس گیاهپزشکی فارغ تحصیل از دانشگاه دولتی شهرکرد علاقه مند به
             دنیای برنامه نویسی و عاشق یادگیری مباحث روز دینا در حوزه برنامه
             نویسی در زمینه فرانت اند بیش چهار سال یادگیری و گذراندن دوره های

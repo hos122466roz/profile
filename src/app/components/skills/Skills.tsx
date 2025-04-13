@@ -1,4 +1,4 @@
-import img from "../../../../public/img/DSC_1679.png";
+import img from "../../../../public/img/DSC_1703 (1).jpg";
 import Image from "next/image";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
